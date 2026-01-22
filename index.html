@@ -3,9 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio | Software Engineering Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm a Software Engineer</h1>
+            <p class="hero-subtitle">Computer Science Student | Full Stack Developer | Tech Enthusiast</p>
+            <p class="hero-description">Building beautiful, functional web applications and exploring the world of software development</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-animation">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate software engineering student with a keen interest in full-stack web development, mobile applications, and cloud technologies. I love turning ideas into reality through code and creating solutions that make a difference.</p>
+                    <p>My journey in tech started with curiosity, and it has evolved into a commitment to continuous learning and innovation. I'm proficient in multiple programming languages and frameworks, and I'm always excited to take on new challenges.</p>
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">React</div>
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Java</div>
+                        <div class="skill-tag">HTML & CSS</div>
+                        <div class="skill-tag">Node.js</div>
+                        <div class="skill-tag">SQL</div>
+                        <div class="skill-tag">Git</div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h4>Projects</h4>
+                        <p id="projectCount">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Repositories</h4>
+                        <p id="repoCount">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Followers</h4>
+                        <p id="followerCount">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded from GitHub -->
+                <div class="project-skeleton">
+                    <div class="skeleton-header"></div>
+                    <div class="skeleton-text"></div>
+                </div>
+                <div class="project-skeleton">
+                    <div class="skeleton-header"></div>
+                    <div class="skeleton-text"></div>
+                </div>
+                <div class="project-skeleton">
+                    <div class="skeleton-header"></div>
+                    <div class="skeleton-text"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Sample Websites Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Sample Websites & Work</h2>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Sample work items will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">Feel free to reach out to me for collaborations or just a friendly hello!</p>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-card" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yourprofile" class="contact-card" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>View my repositories</p>
+                        </div>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+1234567890" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (234) 567-8900</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved. | <span id="githubUsername">Loading...</span></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
