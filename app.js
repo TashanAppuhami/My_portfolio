@@ -15,16 +15,16 @@ const CONFIG = {
     },
     sampleWebsites: [
         {
-            title: 'E-Commerce Platform',
+            title: 'Cine Search (API Project)',
             description: 'A full-stack e-commerce platform built with React and Node.js',
             emoji: '🛍️',
-            link: '#',
+            link: 'https://tashanappuhami.github.io/Film_API/',
         },
         {
-            title: 'Task Management App',
+            title: 'Grill Master (POS Project)',
             description: 'A productivity tool for managing daily tasks with real-time sync',
             emoji: '✓',
-            link: '#',
+            link: 'https://tashanappuhami.github.io/GrillMaster_POS/',
         },
         {
             title: 'Weather Dashboard',
